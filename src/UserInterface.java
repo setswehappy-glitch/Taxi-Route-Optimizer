@@ -1,8 +1,10 @@
+
 import java.util.List;
 import java.util.Scanner;
 
 //class to handle users interface/ interaction with the code
 public class UserInterface {
+
     private RouteOptimizer optimizer;
     private CityGraph graph;
     private Scanner scanner;
@@ -20,13 +22,13 @@ public class UserInterface {
         return selectLocation();
     }
 
-     // method to allow the user to select their destination/ end point
+    // method to allow the user to select their destination/ end point
     public Location selectDestination() {
         System.out.println("\nPlease select your DESTINATION:");
         return selectLocation();
     }
 
-     // method that displays all the the available locations or destination
+    // method that displays all the the available locations or destination
     private Location selectLocation() {
         List<Location> list = graph.getLocations();
 
@@ -71,9 +73,10 @@ public class UserInterface {
         System.out.printf("Total Distance: %.2f km\n",
                 route.getTotalDistance());
     }
+    // Creates and returns the city network
 
-    // Creates the city network and starts the program
-    public static void main(String[] args) {
+    public static CityGraph createCityGraph() {
+
         CityGraph graph = new CityGraph();
 
         Location a = new Location("Bellville", 10, 20);
@@ -90,6 +93,14 @@ public class UserInterface {
         graph.addRoad(new Road(b, c, 10.2));
         graph.addRoad(new Road(c, d, 3.1));
         graph.addRoad(new Road(a, c, 12.0));
+
+        return graph;
+    }
+
+    // Creates the city network and starts the program
+    public static void main(String[] args) {
+
+        CityGraph graph = createCityGraph();
 
         RouteOptimizer optimizer = new RouteOptimizer(graph);
         UserInterface ui = new UserInterface(graph, optimizer);
