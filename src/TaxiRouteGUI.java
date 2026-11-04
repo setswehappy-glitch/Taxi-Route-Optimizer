@@ -138,7 +138,7 @@ public class TaxiRouteGUI extends javax.swing.JFrame {
                 .addComponent(findRouteButton)
                 .addGap(18, 18, 18)
                 .addComponent(routeResultLabel)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 92, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 72, Short.MAX_VALUE)
                 .addComponent(resetButton)
                 .addContainerGap())
         );
