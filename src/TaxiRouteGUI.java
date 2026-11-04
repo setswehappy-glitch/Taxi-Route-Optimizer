@@ -14,6 +14,9 @@ public class TaxiRouteGUI extends javax.swing.JFrame {
      */
     public TaxiRouteGUI() {
         initComponents();
+        // Remove the default placeholder items
+        startLocationComboBox.removeAllItems();
+        destinationComboBox.removeAllItems();
         graph = UserInterface.createCityGraph();
 
         optimizer = new RouteOptimizer(graph);
@@ -228,4 +231,5 @@ public class TaxiRouteGUI extends javax.swing.JFrame {
     private javax.swing.JLabel routeResultLabel;
     private javax.swing.JComboBox<String> startLocationComboBox;
     // End of variables declaration//GEN-END:variables
+
 }
