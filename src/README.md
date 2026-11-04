@@ -56,8 +56,6 @@ RouteOptimizer -> finds the shortest route.
 UserInterface - >handles menus and starts the program.
 FileManager -> loads locations and roads from text files.
 AppLogger -> writes events and errors to the log file.
-
-Limits
-The prototype uses sample data. It has no live traffic information or graphical interface.
+TaxiRouteGUI -> allows the user to interact with system using a graphical interface.
 
 
