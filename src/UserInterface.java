@@ -82,7 +82,7 @@ public class UserInterface {
         Location a = new Location("Bellville", 10, 20);
         Location b = new Location("Cape Town CBD", 15, 25);
         Location c = new Location("Kassleslvei", 18, 15);
-        Location d = new Location("Belhair", 20, 12);
+        Location d = new Location("Belhar", 20, 12);
 
         graph.addLocation(a);
         graph.addLocation(b);
