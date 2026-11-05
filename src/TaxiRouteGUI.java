@@ -17,11 +17,7 @@ public class TaxiRouteGUI extends javax.swing.JFrame {
         // Remove the default placeholder items
         startLocationComboBox.removeAllItems();
         destinationComboBox.removeAllItems();
-        graph = new CityGraph();
-
-        FileManager fileManager = new FileManager();
-        fileManager.loadLocations(graph);
-        fileManager.loadRoads(graph);
+        graph = UserInterface.createCityGraph();
 
         optimizer = new RouteOptimizer(graph);
 
