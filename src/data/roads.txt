@@ -1,4 +1,0 @@
-Bellville,Cape Town CBD,15.5
-Cape Town CBD,Kassleslvei,10.2
-Kassleslvei,Belhar,3.1
-Bellville,Kassleslvei,12.0
