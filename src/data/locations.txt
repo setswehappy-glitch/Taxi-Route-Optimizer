@@ -1,0 +1,4 @@
+Bellville,10,20
+Cape Town CBD,15,25
+Kassleslvei,18,15
+Belhar,20,12
